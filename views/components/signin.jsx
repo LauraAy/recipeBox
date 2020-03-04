@@ -10,7 +10,11 @@ const signIn = props => {
           <input class="uk-input" type="text" placeholder="Email">
       </div>
         </div>
-    </form>
+        <p uk-margin>
+          <a class="uk-button uk-button-default" href="#">Submit</a>
+        </p>
+
+  </form>
   )
 }
 
