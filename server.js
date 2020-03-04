@@ -6,7 +6,7 @@ const app = express()
 // app.use(express.urlencoded({ extended: true}))
 // app.use(express.json())
 
-const { User, Recipe, RecipeCreator, Region} = require('./models')
+const { User, Recipe, RecipeCreator, Region } = require('./models')
 
 require('./config').sync()
 .then(() => app.listen(3000))
