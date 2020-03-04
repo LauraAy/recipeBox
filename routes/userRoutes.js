@@ -16,4 +16,9 @@ router.post('/users', (req, res) => User.create(req.body)
   .then(() => res.sendStatus(200)
   .catch(e => console.error(e))))
 
+// // not working right now
+// router.update('/users/:username', (req, res) => User.update({where: { username: req.params.username}})
+//   .then(user => res.json(user))
+//   .catch(e => console.error(e)))
+
 module.exports = router
