@@ -1,4 +1,4 @@
-const { Model, STRING, INTEGER} = require('sequelize')
+const { Model, STRING, INTEGER, TEXT } = require('sequelize')
 
 class Recipe extends Model { }
 
