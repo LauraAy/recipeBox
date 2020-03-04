@@ -16,7 +16,7 @@ Recipe.init({
     allowNull: true,
   },
   recipeText: {
-    type: STRING(10000),
+    type: Text,
     allowNull: false
   }
 }, { sequelize: require('../config'), modelName: 'Recipe' })
