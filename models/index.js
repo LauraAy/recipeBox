@@ -10,7 +10,7 @@ Recipe.hasMany(Region)
 Region.belongsTo(Recipe)
 
 RecipeCreator.hasMany(Recipe)
-RecipeCreator.belongsTo(Recipe)
+Recipe.belongsTo(RecipeCreator)
 // Recipe.belongsToMany(RecipeCreator, { through: 'CreatorRecipe' })
 
 
