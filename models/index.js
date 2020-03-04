@@ -6,11 +6,14 @@ const Region = require('./Region.js')
 User.hasMany(Recipe)
 Recipe.belongsTo(User)
 
-RecipeCreator.hasMany(Recipe)
-Recipe.belongsToMany(RecipeCreator, { through: 'CreatorRecipe' })
-
 Recipe.hasMany(Region)
-Region.belongsToMany(Recipe, { through: 'RecipeRegion' })
+Region.belongsTo(Recipe)
+
+RecipeCreator.hasMany(Recipe)
+RecipeCreator.belongsTo(Recipe)
+// Recipe.belongsToMany(RecipeCreator, { through: 'CreatorRecipe' })
+
+
 
 // Region.getRecipes()
 // let region = Region.build({

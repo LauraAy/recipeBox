@@ -20,7 +20,7 @@ RecipeCreator.init({
     allowNull: true
   },
   about: {
-    type: STRING(5000),
+    type: STRING(1000),
     allowNull: true
   }
 }, { sequelize: require('../config'), modelName: 'RecipeCreator' })
