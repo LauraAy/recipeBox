@@ -1,6 +1,6 @@
 const User = require('./User.js')
-const Recipe = require('.Recipe.js')
-const RecipeCreator = require('.RecipeCreator.js')
+const Recipe = require('./Recipe.js')
+const RecipeCreator = require('./RecipeCreator.js')
 const Region = require('./Region.js/index.js')
 
 User.hasMany(Recipe)
