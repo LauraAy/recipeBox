@@ -2,7 +2,7 @@ const { Model, STRING, FLOAT } = require('sequelize')
 
 class Region extends Model { }
 
-Recipe.init({
+Region.init({
   regionName: {
     type: STRING,
     allowNull: false
@@ -15,6 +15,6 @@ Recipe.init({
     type: FLOAT,
     allowNull: true
   }
-}, { sequelize: require('../config'), modelName: 'Recipe' })
+}, { sequelize: require('../config'), modelName: 'Region' })
 
-module.exports = Recip
+module.exports = Region

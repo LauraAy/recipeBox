@@ -25,4 +25,4 @@ RecipeCreator.init({
   }
 }, { sequelize: require('../config'), modelName: 'RecipeCreator' })
 
-module.exports = Recipe
+module.exports = RecipeCreator
