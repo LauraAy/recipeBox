@@ -6,7 +6,7 @@ User.init({
   username: {
     type: STRING,
     allowNull: false
-}
+},
   email: {
     type: STRING,
     allowNull: false,
@@ -14,11 +14,11 @@ User.init({
     validate: {
       isEmail: true,
     }
+  },
   about: {
     type: STRING(1000)
   }
 
-  }
-}, { sequelize: require('../config'), modelName: 'User' })
+  }, { sequelize: require('../config'), modelName: 'User' })
 
 module.exports = User
