@@ -2,7 +2,7 @@ const React = require('react')
 
 const Navbar = props => {
   return (
-    <nav class="uk-navbar uk-navbar-container uk-background-muted uk-padding-small">
+    <nav class="uk-navbar uk-padding-small">
       <div class="uk-navbar-left">
         <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span uk-navbar-toggle-icon></span><span
           class="uk-margin-small-left"></span></a>
@@ -14,6 +14,7 @@ const Navbar = props => {
               <a href="#">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
               <li><a href="#">My Recipes</a></li>
+              <li><a href="#">Create Recipes</a></li>
               <hr class="uk-divider-icon">
                 <li class="uk-nav-header">Explore</li>
                 <li><a href="#">All Recipes</a></li>
@@ -23,6 +24,7 @@ const Navbar = props => {
         </div>
           </div>
         </div>
+        <a class="uk-navbar-item uk-logo" href="index.html"><img src="./Navbar_logo.png" class="logo"></a>
   </nav>
   )
 }
