@@ -24,7 +24,7 @@ const Navbar = props => {
         </div>
           </div>
         </div>
-        <a class="uk-navbar-item uk-logo" href="index.html"><img src="./Navbar_logo.png" class="logo"></a>
+        <img src="./Navbar_logo.png" class="logo">
   </nav>
   )
 }

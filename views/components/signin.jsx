@@ -2,6 +2,7 @@ const React = require('react')
 
 const signIn = props => {
   return (
+    <center>
     <form>
 
       <div class="uk-margin">
@@ -27,6 +28,7 @@ const signIn = props => {
 
 
   </form>
+  </center>
   )
 }
 
