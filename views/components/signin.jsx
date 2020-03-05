@@ -19,12 +19,13 @@ const signIn = props => {
       </div>
           </div>
 
-          <p uk-margin>
-            <a class="uk-button uk-button-default" href="#">Sign In</a>
-          </p>
-          <p uk-margin>
-            <a class="uk-button uk-button-default" href="#">Register</a>
-          </p>
+            <p uk-margin>
+              <button class="uk-button uk-button-primary uk-button-small">Sign In</button>
+            </p>
+
+            <p uk-margin>
+              <button class="uk-button uk-button-primary uk-button-small">Register</button>
+            </p>
 
 
   </form>
