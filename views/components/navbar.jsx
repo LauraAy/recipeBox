@@ -30,8 +30,8 @@ const Navbar = props => {
         </a>
             </li>
           </ul>
-  </div>
-</nav>
+      </div>
+    </nav>
   )
 }
       
