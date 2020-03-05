@@ -11,7 +11,7 @@ router.get('/recipes/:title', (req, res) => Recipe.findOne({ where: { title: req
   .then(user => res.json(user))
   .catch(e => console.error(e)))
 
-// Create new User
+// Create new Recipe
 router.post('/recipes', (req, res) => Recipe.create(req.body)
   .then(() => res.sendStatus(200)
     .catch(e => console.error(e))))

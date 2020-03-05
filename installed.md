@@ -1,3 +1,0 @@
-express
-mysql2
-sequelize
