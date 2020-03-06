@@ -9,7 +9,11 @@ app.use(express.json())
 
 // const { User, Recipe, RecipeCreator, Region } = require('./models')
 
+
 const { Recipe, RecipeCreator, Region, User } = require('./models')
+
+app.use(require('./routes'))
+
 
 require('./config').sync()
 .then(() => app.listen(3000))
