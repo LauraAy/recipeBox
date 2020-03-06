@@ -1,0 +1,32 @@
+  /* background */
+
+  html {
+    background: url("../images/fruits.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 100% 10%;
+  }
+
+  /* logo */
+
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 100px;
+    opacity: 0.9;
+  }
+
+  /*title image */
+
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 200px;
+    opacity: 0.9;
+  }
