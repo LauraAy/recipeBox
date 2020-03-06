@@ -21,11 +21,25 @@ const Navbar = props => {
                 <li><a href="#">Category</a></li>
                 <li><a href="#">Region</a></li>
           </ul>
-        </div>
-          </div>
-        </div>
-        <img src="./Navbar_logo.png" class="logo">
-  </nav>
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="index.html">
+                <span class="uk-icon uk-margin-small-right"></span>
+                My Recipes
+        </a>
+            </li>
+          </ul>
+          <ul class="uk-navbar-nav">
+            <li>
+              <a href="index.html">
+                <span class="uk-icon uk-margin-small-right"></span>
+                Create Recipes
+        </a>
+            </li>
+          </ul>
+      </div>
+    </nav>
+
   )
 }
       
