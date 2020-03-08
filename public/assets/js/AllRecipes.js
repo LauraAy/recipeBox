@@ -1,22 +1,37 @@
-const {axios, localStorage} = window
+const { axios, localStorage } = window
 
 const renderAllRec = display => {
 
-  document.getElementById('display').innerHTML = ''
-  
-display.forEach(({ title, User }) => {
-  const itemElemTwo = document.createElement('div')
-  
-  itemElem.innerHTML= `Title: ${title} User: ${User.username}`
+  document.getElementById('allRecDisplay').innerHTML = ''
 
-  // display.forEach(({data}) => {
-  //   const itemElem = document.createElement('li')
+  // display.forEach(({ title, User }) => {
+  //   const itemElemTwo = document.createElement('div')
 
-  // itemElem.innerHTML = `Title: ${display.title}`
+  //   itemElem.innerHTML = `Title: ${title} User: ${User.username}`
 
-  document.getElementById('display').append(itemElem)
+    display.forEach(({title, User, RecipeCreator, recipeType, servingSize, recipeText}) => {
+      const itemElem = document.createElement('div')
 
-})
+      itemElem.innerHTML = `
+  <ul class="uk-grid-large uk-child-width-1-1 uk-child-width-1-1@suk-text-center" uk-sortable="handle: .uk-sortable-handle" uk-grid>
+    <li>
+        <div class="uk-card uk-card-default uk-card-body">
+          <span class="uk-sortable-handle uk-margin-large-center" uk-icon="icon: bookmark"></span>
+          <h2>${title}</h2>
+            <p><b>User:</b> ${User.username}</p>
+            <p><b>Recipe Creator:</b> ${RecipeCreator.creatorName}</p>
+            <p><b>Recipe Type:</b> ${recipeType}</p>
+            <p><b>Serving Size:</b>${servingSize}</p>
+            <p><b>Ingredients and Directions:</b></p>
+            <p>${recipeText}</p>
+        </div>
+      </li>
+    <ul>
+      `
+
+    document.getElementById('allRecDisplay').append(itemElem)
+
+  })
 }
 
 // $.ajax({
