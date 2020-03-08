@@ -15,7 +15,12 @@
 
   /* background */
 
+  h2 {
+    color: darkred;
+  }
+
   html {
+ 
     background: url("../images/fruits.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -45,4 +50,6 @@
     height: 200px;
     opacity: 0.9;
   }
+
+
 
