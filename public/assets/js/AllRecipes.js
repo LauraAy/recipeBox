@@ -4,7 +4,7 @@ const renderAllRec = display => {
 
   document.getElementById('allRecDisplay').innerHTML = ''
 
-    display.forEach(({title, User, RecipeCreator, recipeType, servingSize, recipeText}) => {
+    display.forEach(({title, User, creatorName, recipeType, servingSize, recipeText}) => {
       const itemElem = document.createElement('div')
 
       itemElem.innerHTML = `
@@ -14,7 +14,7 @@ const renderAllRec = display => {
           <span class="uk-sortable-handle uk-margin-large-center" uk-icon="icon: bookmark"></span>
           <h2>${title}</h2>
             <p><b>User:</b> ${User.username}</p>
-            <p><b>Recipe Creator:</b> ${RecipeCreator.creatorName}</p>
+            <p><b>Recipe Creator:</b> ${creatorName}</p>
             <p><b>Recipe Type:</b> ${recipeType}</p>
             <p><b>Serving Size:</b>${servingSize}</p>
             <p><b>Ingredients and Directions:</b></p>
