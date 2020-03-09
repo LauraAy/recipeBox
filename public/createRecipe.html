@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Recipe Box</title>
+  <title>Create Recipe - MRBox</title>
 
   <!-- uikit CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
   <!-- local css -->
-<link rel="stylesheet" href="../public/assets/css/style.css" />
+  <link rel="stylesheet" href="../public/assets/css/style.css" />
 
 </head>
 
 <body>
 
-  <nav class="uk-navbar uk-padding-small">
+  <nav class="uk-navbar uk-padding-small uk-navbar-container .uk-light">
     <div class="uk-navbar-left">
       <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span uk-navbar-toggle-icon></span><span
           class="uk-margin-small-left"></span></a>
@@ -24,12 +24,12 @@
         <div class="uk-offcanvas-bar">
 
           <ul class="uk-nav uk-nav-default uk-margin">
-            <a href="#">
+            <a href="index.html">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="#">My Recipes</a></li>
+            <li><a href="myRecipes.html">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="#">All Recipes</a></li>
+            <li><a href="AllRecipes.html">All Recipes</a></li>
             <li><a href="#">Region</a></li>
           </ul>
         </div>
@@ -75,7 +75,8 @@
         <input type="text" id="recipeText">
 
         <p uk-margin>
-          <button class="uk-button uk-button-primary uk-button-small" id="createRecipe" type="submit">Create Recipe!</button>
+          <button class="uk-button uk-button-secondary uk-button-small" id="createRecipe" type="submit">Create
+            Recipe!</button>
         </p>
       </div>
   </div>
