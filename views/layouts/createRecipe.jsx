@@ -2,17 +2,15 @@ const React = require('react')
 const Html = require('../layouts/default')
 const Navbar = require('../components/navbar')
 const SignIn = require('../components/signin.jsx')
+const CreateForm = require('../components/CreateForm.jsx')
 
 const Home = props => {
   return (
     <Html>
       <Navbar />
-      <div id="container">
-            <img src="./assets/images/logo_mrb.png" class="image">
-      </div>
-      <SignIn />
+      <CreateForm />
     </Html>
-  )
-}
-
-module.exports = Home
+      )
+    }
+    
+module.exports = createRecipe
