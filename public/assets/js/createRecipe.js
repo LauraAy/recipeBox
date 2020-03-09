@@ -23,4 +23,3 @@ document.getElementById('createRecipe').addEventListener('click', event => {
   window.location.replace("/myRecipes");
 
 })
-
