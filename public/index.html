@@ -4,27 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-        crossorigin="" />
-    <link rel="stylesheet" href="./assets/css/style.css" />   
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-        crossorigin=""></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
+    <title>My Recipe Box</title>
+    <!-- uikit CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+    <!-- local css -->
+    <link rel="stylesheet" href=".//assets/css/style.css" />
 </head>
 
 <body>
 
-    <div id="mapid"></div>
+    <center>
+        <h2 id="message">Welcome to My Recipe Box!  Fill in your username and either click Register to create a new account, or click Sign In to sign in with an existing account.</h2>
+        <form class="login">
+    
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input class="uk-input" type="text" placeholder="User Name" id="username">
+                </div>
+            </div>
+    
+            <div class="uk-margin">
+                <div class="uk-inline">
+                    <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                    <input class="uk-input" type="email" id="email">
+                </div>
+            </div>
+    
+            <p uk-margin>
+                <button class="uk-button uk-button-primary uk-button-small" id="login" type="submit">Log In</button>
+            </p>
+    
+            <p uk-margin>
+                <button class="uk-button uk-button-primary uk-button-small" id="createUser">Register</button>
+            </p>
+    
+    
+        </form>
+    </center>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/app.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+<script src="./assets/js/login.js"></script>
 
-    <div id="regionRecipes"></div>
 </body>
-
 </html>

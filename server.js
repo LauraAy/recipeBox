@@ -11,8 +11,9 @@ app.use(express.json())
 app.use(require('./routes'))
 
 app.get('/',(req,res) =>{
-    res.render('home')
+    res.render('')
 })
+
 
 require('./config').sync()
 .then(() => app.listen(3000))
