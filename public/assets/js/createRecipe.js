@@ -10,7 +10,7 @@ const createRecipe = () => {
     servingSize: document.getElementById('servingSize').value,
     recipeText: document.getElementById('recipeText').value,
     UserId: localStorage.getItem('uid')
-})
+  })
 }
 
 document.getElementById('createRecipe').addEventListener('click', event => {
@@ -19,9 +19,8 @@ document.getElementById('createRecipe').addEventListener('click', event => {
   // Runs the createRecipe function
   createRecipe()
   console.log("you created a recipe!")
-  // .then(function() {
-  // window.location.replace("/myRecipes")
-  //
-  // })
+
+  window.location.replace("/myRecipes");
+
 })
-  
+
