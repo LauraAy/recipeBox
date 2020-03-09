@@ -1,55 +1,32 @@
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 130px;
+  height: 60px;
+  text-align: top;
+}
 
-/* DEFAULT */
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 200px;
+}
 
+html {
+  background: url("../images/background4.jpeg") no-repeat center center fixed;
+  -webkit-background-size: fixed;
+  -moz-background-size: fixed;
+  -o-background-size: fixed;
+  background-size: cover;
+  background-position: center;
+}
 
-/* SIGN IN PAGE */
-
-
-/* MY RECIPE PAGE */
-
-
-/* RECIPE CREATOR PAGE */
-
-
-/* REGION PAGE */
-
-  /* background */
-
-  h2 {
-    color: darkred;
-  }
-
-  html {
- 
-    background: url("../images/fruits.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-position: 100% 10%;
-  }
-
-  /* logo */
-
-  .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 100px;
-    opacity: 0.9;
-  }
-
-  /*title image */
-
-  .image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    height: 200px;
-    opacity: 0.9;
-  }
-
-
-
+#recipeText {
+  font-size: 11pt;
+  height: 100px;
+  width: 310px;
+  white-space: nowrap;
+}
