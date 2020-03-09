@@ -1,5 +1,5 @@
 const { axios, localStorage } = window
-
+// const uidCreate = localStorage.getItem('uid')
 
 
 const createRecipe = () => {
@@ -8,6 +8,7 @@ const createRecipe = () => {
     recipeType: document.getElementById('recipeType').value,
     servingSize: document.getElementById('servingSize').value,
     recipeText: document.getElementById('recipeText').value,
+    // UserId: localStorage.getItem('uid')
 })
 }
 
@@ -16,5 +17,10 @@ document.getElementById('createRecipe').addEventListener('click', event => {
   event.preventDefault()
   // Runs the createRecipe function
   createRecipe()
-  console.log('you created a recipe')
+  console.log("you created a recipe!")
+  // .then(function() {
+  // window.location.replace("/myRecipes")
+  //
+  // })
 })
+  
