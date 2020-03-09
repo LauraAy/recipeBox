@@ -1,72 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regional Recipes</title>
+  <title>Regional Recipes - MRBox</title>
 
-<!-- uikit CDN -->
+  <!-- uikit CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
-<!-- local css -->
-<link rel="stylesheet" href=".//assets/css/style.css" />
+  <!-- local css -->
+  <link rel="stylesheet" href="../public/assets/css/style.css" />
 
 </head>
-  
-<body>
-<div>
-  <nav class="uk-navbar uk-padding-small">
-    <div class="uk-navbar-left">
-      <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span uk-navbar-toggle-icon></span><span
-          class="uk-margin-small-left"></span></a>
-  
-      <div id="offcanvas-slide" uk-offcanvas>
-        <div class="uk-offcanvas-bar">
-  
-          <ul class="uk-nav uk-nav-default uk-margin">
-            <a href="#">
-              <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="#">Regional Recipes</a></li>
-            <li><a href="#">Create Region</a></li>
-            <hr class="uk-divider-icon">
-            <li class="uk-nav-header">Explore</li>
-            <li><a href="#">All Recipes</a></li>
-            <li><a href="#">My Recipes</a></li>
-            <li><a href="#">Category</a></li>
-          </ul>
-          <ul class="uk-navbar-nav">
-            <li>
-              <a href="AllRecipes.html">
-                <span class="uk-icon uk-margin-small-right"></span>
-                Regional Recipes
-              </a>
-            </li>
-          </ul>
-          <ul class="uk-navbar-nav">
-            <li>
-              <a href="index.html">
-                <span class="uk-icon uk-margin-small-right"></span>
-                Create Region
-              </a>
-            </li>
-          </ul>
-        </div>
-  </nav>
-</div>
 
+<body>
   <div>
-    <h1 style="text-align: center">All Recipes</h1>
+    <nav class="uk-navbar uk-padding-small">
+      <div class="uk-navbar-left">
+        <a href="#offcanvas-slide" class="uk-button uk-button-default" uk-toggle><span
+            uk-navbar-toggle-icon></span><span class="uk-margin-small-left"></span></a>
+
+        <div id="offcanvas-slide" uk-offcanvas>
+          <div class="uk-offcanvas-bar">
+
+            <ul class="uk-nav uk-nav-default uk-margin">
+              <a href="#">
+                <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
+              <li><a href="#">Regional Recipes</a></li>
+              <li><a href="#">Create Region</a></li>
+              <hr class="uk-divider-icon">
+              <li class="uk-nav-header">Explore</li>
+              <li><a href="#">All Recipes</a></li>
+              <li><a href="#">My Recipes</a></li>
+              <li><a href="#">Category</a></li>
+            </ul>
+            <ul class="uk-navbar-nav">
+              <li>
+                <a href="AllRecipes.html">
+                  <span class="uk-icon uk-margin-small-right"></span>
+                  Regional Recipes
+                </a>
+              </li>
+            </ul>
+            <ul class="uk-navbar-nav">
+              <li>
+                <a href="index.html">
+                  <span class="uk-icon uk-margin-small-right"></span>
+                  Create Region
+                </a>
+              </li>
+            </ul>
+          </div>
+    </nav>
   </div>
 
 
-      <div id=allRecDisplay></div>
-   
+
+  <div class="uk-card uk-card-small uk-card-default" style="margin-left: auto; margin-right: auto">
+    <h2 id="message">Regional Recipes</<h2>
+  </div>
+
+  <!-- <div>
+    <h1 style="text-align: center">All Recipes</h1>
+  </div> -->
+
+
+  <div id=allRecDisplay></div>
+
 
   </div>
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script src="./assets/js/allRecipes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+  <script src="../public/assets/js/regionalRecipes.js"></script>
 
 </body>
 
