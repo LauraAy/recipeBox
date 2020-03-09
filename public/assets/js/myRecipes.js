@@ -12,7 +12,7 @@ const renderMyRec = display => {
   document.getElementById('myRecDisplay').innerHTML = ''
   const Recipes = display.Recipes
 
-  Recipes.forEach(({ title, recipeType, servingSize, recipeText }) => {
+  Recipes.forEach(({ title, creatorName, recipeType, servingSize, recipeText }) => {
     const itemElem = document.createElement('div')
 
     itemElem.innerHTML = `
@@ -21,6 +21,7 @@ const renderMyRec = display => {
         <div class="uk-card uk-card-default uk-card-body">
           <span class="uk-sortable-handle uk-margin-large-center" uk-icon="icon: bookmark"></span>
           <h2>${title}</h2>
+            <p><b>Recipe Creator:</b> ${creatorName}</p>
             <p><b>Recipe Type:</b> ${recipeType}</p>
             <p><b>Serving Size:</b>${servingSize}</p>
             <p><b>Ingredients and Directions:</b></p>

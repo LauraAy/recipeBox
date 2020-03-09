@@ -42,40 +42,34 @@
 
   <div class="uk-card uk-card-large uk-card-default uk-padding-large">
     <form class="uk-form-stacked">
-      <h1>Create Recipes</h1>
+      <h1>Create Region</h1>
 
 
       <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Recipe Title:</label>
+        <label class="uk-form-label" for="form-stacked-text">Region Name:</label>
         <div class="uk-form-controls">
           <input class="uk-input" type="text" id="title">
         </div>
       </div>
 
       <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Recipe Type:</label>
+        <label class="uk-form-label" for="form-stacked-text">Latitude:</label>
         <div class="uk-form-controls">
-          <input class="uk-input" type="text" id="recipeType">
+          <input class="uk-input" type="number" id="latitude">
         </div>
       </div>
 
 
       <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Serving Size:</label>
+        <label class="uk-form-label" for="form-stacked-text">Longitude:</label>
         <div class="uk-form-controls">
-          <input class="uk-input" id="form-stacked-text" type="number" id="servingSize"
-            placeholder="How many people will this serve?">
+          <input class="uk-input"  type="number" id="logitude">
         </div>
       </div>
 
-
-      <div class="uk-margin">
-        <label class="uk-form-label" for="form-stacked-text">Directions:</label>
-        <div class="uk-form-controls uk-form-width-large"></div>
-        <input type="text" id="recipeText">
 
         <p uk-margin>
-          <button class="uk-button uk-button-primary uk-button-small" id="createRecipe" type="submit">Create Recipe!</button>
+          <button class="uk-button uk-button-primary uk-button-small" id="createRegion" type="submit">Create Region!</button>
         </p>
       </div>
   </div>
@@ -112,7 +106,3 @@
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
   <script src="../public/assets/js/createRecipe.js"></script>
-
-</body>
-
-</html>

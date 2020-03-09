@@ -4,7 +4,7 @@ const renderAllRec = display => {
 
   document.getElementById('allRecDisplay').innerHTML = ''
 
-    display.forEach(({title, User, creatorName, recipeType, servingSize, recipeText}) => {
+    display.forEach(({regionName, recipeType}) => {
       const itemElem = document.createElement('div')
 
       itemElem.innerHTML = `
@@ -12,13 +12,8 @@ const renderAllRec = display => {
     <li>
         <div class="uk-card uk-card-default uk-card-body">
           <span class="uk-sortable-handle uk-margin-large-center" uk-icon="icon: bookmark"></span>
-          <h2>${title}</h2>
-            <p><b>User:</b> ${User.username}</p>
-            <p><b>Recipe Creator:</b> ${creatorName}</p>
+          <h2>${regionName}</h2>
             <p><b>Recipe Type:</b> ${recipeType}</p>
-            <p><b>Serving Size:</b>${servingSize}</p>
-            <p><b>Ingredients and Directions:</b></p>
-            <p>${recipeText}</p>
         </div>
       </li>
     <ul>
@@ -37,8 +32,7 @@ const renderAllRec = display => {
 //   renderAllRec(data)
 // })
 
-axios.get('/api/recipes')
+axios.get('/api/regionalrecipes')
 .then(({data}) => {
   renderAllRec(data)
 })
-
