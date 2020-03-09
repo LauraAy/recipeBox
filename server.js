@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // require('dotenv').config('')
 const express = require('express')
 const { join } = require('path')
@@ -14,6 +15,24 @@ const { Recipe, RecipeCreator, Region, User } = require('./models')
 
 app.use(require('./routes'))
 
+=======
+const express = require('express')
+const { join } = require('path')
+const app = express()
+const { Region } = require('./models')
+
+
+
+app.use(express.static(join(__dirname,'public')))
+app.use(express.urlencoded({ extended: true}))
+app.use(express.json())
+app.use(require('./routes'))
+
+app.get('/',(req,res) =>{
+    res.render('')
+})
+
+>>>>>>> origin/recipeMap
 
 require('./config').sync()
 .then(() => app.listen(3000))
