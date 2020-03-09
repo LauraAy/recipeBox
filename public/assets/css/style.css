@@ -15,8 +15,17 @@
 
   /* background */
 
+  h2 {
+    color: darkred;
+  }
+
   html {
+<<<<<<< HEAD
     background: url("../images/background13.jpeg") no-repeat center center fixed;
+=======
+ 
+    background: url("../images/fruits.jpg") no-repeat center center fixed;
+>>>>>>> 4b34d7dc71c09f8f52fef5c9f4bc9874ec68d2e2
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,4 +52,6 @@
     width: 600px;
     height: 200px;
   }
+
+
 
