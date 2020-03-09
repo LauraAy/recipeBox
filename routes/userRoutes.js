@@ -1,13 +1,14 @@
 const router = require('express').Router()
 const { User, Recipe, RecipeCreator, Region } = require('../models')
+// var passport = require("../config/passport");
 
 // Get all Users with Recipes included
-router.get('/users', (req, res) => User.findAll({ include: [Recipe, RecipeCreator, Region]})
+router.get('/users', (req, res) => User.findAll({ include: [Recipe]})
   .then(users => res.json (users))
   .catch(e => console.error (e)))
 
-// Get one User with Recipes included
-router.get('/users/:username', (req, res) => User.findOne({ where: { username: req.params.username}, include: [Recipe, RecipeCreator, Region]})
+// Get one User
+router.get('/users/:email', (req, res) => User.findOne({ where: { email: req.params.email}, include: [Recipe]})
   .then(user => res.json(user))
   .catch(e => console.error(e)))
 
@@ -15,6 +16,11 @@ router.get('/users/:username', (req, res) => User.findOne({ where: { username: r
 router.post('/users', (req, res) => User.create(req.body)
   .then(() => res.sendStatus(200)
   .catch(e => console.error(e))))
+
+// // Passport not working
+// router.post("/api/login", passport.authenticate("local"), function (req, res) {
+//   res.json(req.user);
+// })
 
 // not working right now
 // router.put('/users/:username', (req, res) => User.update({where: { username: req.params.username}})

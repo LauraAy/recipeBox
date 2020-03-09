@@ -7,7 +7,7 @@ router.get('/recipeCreators', (req, res) => Recipe.findAll({ include: [Recipe, R
   .catch(e => console.error(e)))
 
 // Get one RecipeCreator
-router.get('/recipeCreators/:creatorName', (req, res) => Recipe.findOne({ where: { creatorName: req.params.creatorName }, include: [Recipe, User, Region] })
+router.get('/recipeCreators/:id', (req, res) => Recipe.findOne({ where: { id: req.params.id } })
   .then(user => res.json(user))
   .catch(e => console.error(e)))
 

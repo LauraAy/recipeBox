@@ -4,11 +4,6 @@ const renderAllRec = display => {
 
   document.getElementById('allRecDisplay').innerHTML = ''
 
-  // display.forEach(({ title, User }) => {
-  //   const itemElemTwo = document.createElement('div')
-
-  //   itemElem.innerHTML = `Title: ${title} User: ${User.username}`
-
     display.forEach(({title, User, RecipeCreator, recipeType, servingSize, recipeText}) => {
       const itemElem = document.createElement('div')
 
