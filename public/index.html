@@ -8,7 +8,7 @@
     <!-- uikit CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
     <!-- local css -->
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                         <hr class="uk-divider-icon">
                         <li class="uk-nav-header">Explore</li>
                         <li><a href="AllRecipes.html">All Recipes</a></li>
-                        <li><a href="#">Region</a></li>
+                        <li class="uk-nav-header">Region</li>
                     </ul>
                 </div>
             </div>
@@ -40,7 +40,7 @@
 
     <center>
         <div id="container">
-            <img src="../public/assets/images/logo_mrb.png" class="image">
+            <img src="assets/images/logo_mrb.png" class="image">
         </div>
 
         <br><br>
@@ -74,6 +74,50 @@
 
         </form>
     </center>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
+    <script src="assets/js/login.js"></script>
+
+</body>
+</html>
+
+
+    <!-- <center>
+            <h2 id="message">Welcome to My Recipe Box! Fill in your username and either click Register to create a new
+                account, or click Sign In to sign in with an existing account.</h2>
+            <form class="login">
+    
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon" uk-icon="icon: user"></span>
+                        <input class="uk-input" type="text" placeholder="User Name" id="username">
+                    </div>
+                </div>
+    
+                <div class="uk-margin">
+                    <div class="uk-inline">
+                        <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                        <input class="uk-input" type="email" id="email">
+                    </div>
+                </div>
+    
+                <p uk-margin>
+                    <button class="uk-button uk-button-primary uk-button-small" id="login" type="submit">Log In</button>
+                </p>
+    
+                <p uk-margin>
+                    <button class="uk-button uk-button-primary uk-button-small" id="createUser">Register</button>
+                </p>
+    
+    
+            </form>
+        </center> -->
+
+
 
 
     <!-- <center>
@@ -113,7 +157,3 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
     <script src="../public/assets/js/login.js"></script>
-
-</body>
-
-</html>

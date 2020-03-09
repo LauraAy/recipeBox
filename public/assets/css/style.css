@@ -30,17 +30,17 @@ html {
   width: 310px;
   white-space: nowrap;
 }
+
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
 html, body, #mapid {
-    height: 100%;
-    width: 100vw;
+  height: 100%;
+  width: 100vw;
 }
 
 h2 {
   color: darkred;
 }
-
-

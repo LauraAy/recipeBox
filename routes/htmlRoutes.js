@@ -19,10 +19,6 @@ router.get('/map', function (req, res) {
   })
   
 
-router.get('/regionalrecipes', function (req, res) {
-    res.sendFile(path.join(__dirname, ('../public/regionalRecipes.html')))
-  })
- 
 
 router.get('/myrecipes', function (req, res) {
   res.sendFile(path.join(__dirname, ('../public/myRecipes.html')))
