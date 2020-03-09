@@ -19,22 +19,6 @@ const Navbar = props => {
                 <li><a href="#">All Recipes</a></li>
                 <li><a href="#">Region</a></li>
           </ul>
-          <ul class="uk-navbar-nav">
-            <li>
-              <a href="index.html">
-                <span class="uk-icon uk-margin-small-right"></span>
-                My Recipes
-        </a>
-            </li>
-          </ul>
-          <ul class="uk-navbar-nav">
-            <li>
-              <a href="index.html">
-                <span class="uk-icon uk-margin-small-right"></span>
-                Create Recipes
-        </a>
-            </li>
-          </ul>
       </div>
     </nav>
 
