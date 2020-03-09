@@ -8,7 +8,7 @@ const createRecipe = () => {
     recipeType: document.getElementById('recipeType').value,
     servingSize: document.getElementById('servingSize').value,
     recipeText: document.getElementById('recipeText').value,
-    // UserId: localStorage.getItem('uid')
+    UserId: localStorage.getItem('uid')
 })
 }
 

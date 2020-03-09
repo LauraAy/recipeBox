@@ -7,6 +7,14 @@ Recipe.init({
     type: STRING,
     allowNull: false
   },
+  creatorName: {
+    type: STRING,
+    allowNull: true
+  },
+  aboutCreator: {
+    type: STRING(1000),
+    allowNull: true
+  },
   recipeType: {
     type: STRING,
     allowNull: false

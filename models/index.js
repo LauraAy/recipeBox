@@ -1,6 +1,6 @@
 const User = require('./User.js')
 const Recipe = require('./Recipe.js')
-const RecipeCreator = require('./RecipeCreator.js')
+// const RecipeCreator = require('./RecipeCreator.js')
 const Region = require('./Region.js')
 
 User.hasMany(Recipe)
@@ -9,8 +9,8 @@ Recipe.belongsTo(User)
 Recipe.hasMany(Region)
 Region.belongsTo(Recipe)
 
-RecipeCreator.hasMany(Recipe)
-Recipe.belongsTo(RecipeCreator)
+// RecipeCreator.hasMany(Recipe)
+// Recipe.belongsTo(RecipeCreator)
 // Recipe.belongsToMany(RecipeCreator, { through: 'CreatorRecipe' })
 
 
@@ -24,5 +24,5 @@ Recipe.belongsTo(RecipeCreator)
 
 // region.save()
 
-module.exports = { User, Recipe, RecipeCreator, Region}
+module.exports = { User, Recipe, Region}
 
