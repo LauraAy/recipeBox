@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { User, Recipe, RecipeCreator, Region } = require('../models')
+const { User, Recipe, Region } = require('../models')
 // var passport = require("../config/passport");
 
 // Get all Users with Recipes included
