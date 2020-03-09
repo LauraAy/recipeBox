@@ -14,11 +14,9 @@ const Navbar = props => {
               <a href="#">
                 <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
               <li><a href="#">My Recipes</a></li>
-              <li><a href="#">Create Recipes</a></li>
               <hr class="uk-divider-icon">
                 <li class="uk-nav-header">Explore</li>
                 <li><a href="#">All Recipes</a></li>
-                <li><a href="#">Category</a></li>
                 <li><a href="#">Region</a></li>
           </ul>
           <ul class="uk-navbar-nav">

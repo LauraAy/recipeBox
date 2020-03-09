@@ -5,11 +5,12 @@ const { axios, localStorage } = window
 const createRecipe = () => {
   axios.post('/api/recipes', {
     title: document.getElementById('title').value,
+    creatorName: document.getElementById('creatorName').value,
     recipeType: document.getElementById('recipeType').value,
     servingSize: document.getElementById('servingSize').value,
     recipeText: document.getElementById('recipeText').value,
-    // UserId: localStorage.getItem('uid')
-})
+    UserId: localStorage.getItem('uid')
+  })
 }
 
 document.getElementById('createRecipe').addEventListener('click', event => {
@@ -18,9 +19,7 @@ document.getElementById('createRecipe').addEventListener('click', event => {
   // Runs the createRecipe function
   createRecipe()
   console.log("you created a recipe!")
-  // .then(function() {
-  // window.location.replace("/myRecipes")
-  //
-  // })
+
+  window.location.replace("/myRecipes");
+
 })
-  

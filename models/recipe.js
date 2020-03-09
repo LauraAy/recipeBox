@@ -15,6 +15,14 @@ Recipe.init({
     type: INTEGER,
     allowNull: true,
   },
+  creatorName: {
+    type: STRING,
+    allowNull: true
+  },
+  creatorAbout: {
+    type: STRING,
+    allowNull: true
+  },
   recipeText: {
     type: TEXT,
     allowNull: false
