@@ -1,13 +1,13 @@
 const router = require('express').Router()
-const { User, Recipe, RecipeCreator, Region } = require("../models")
+const { User, Recipe, Region } = require("../models")
 
 // Get all Recipes
-router.get('/recipes', (req, res) => Recipe.findAll({ include: [User, Region, RecipeCreator] })
+router.get('/recipes', (req, res) => Recipe.findAll({ include: [User, Region] })
   .then(recipes => res.json(recipes))
   .catch(e => console.error(e)))
 
 // Get one Recipe with User included
-router.get('/recipes/:title', (req, res) => Recipe.findOne({ where: { title: req.params.title }, include: [User, Region, RecipeCreator] })
+router.get('/recipes/:title', (req, res) => Recipe.findOne({ where: { title: req.params.title }, include: [User, Region] })
   .then(recipe => res.json(recipe))
   .catch(e => console.error(e)))
 

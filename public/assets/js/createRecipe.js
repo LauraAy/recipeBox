@@ -5,10 +5,11 @@ const { axios, localStorage } = window
 const createRecipe = () => {
   axios.post('/api/recipes', {
     title: document.getElementById('title').value,
+    creatorName: document.getElementById('creatorName').value,
     recipeType: document.getElementById('recipeType').value,
     servingSize: document.getElementById('servingSize').value,
     recipeText: document.getElementById('recipeText').value,
-    // UserId: localStorage.getItem('uid')
+    UserId: localStorage.getItem('uid')
 })
 }
 
