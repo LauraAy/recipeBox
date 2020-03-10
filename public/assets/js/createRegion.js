@@ -14,18 +14,5 @@ const createRegion = () => {
     // Runs the createRecipe function
     createRegion()
     console.log('you created a region')
-
-    const regionVal = document.getElementById('regionName').value
-
-    axios.get(`/api/users/${regionVal}`)
-      .then(({ data }) => {
-        localStorage.setItem('regname', data.regionName)
-        localStorage.setItem('lat', data.lat)
-        localStorage.setItem('lat', data.long)
-
-        console.log(data.regionName)
-
-
-        // window.location.replace("/createRecipe");
   })
-})
+
