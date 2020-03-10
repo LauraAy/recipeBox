@@ -1,15 +1,11 @@
 const { axios, localStorage } = window
 
 const createRegion = () => {
-  axios.post('/regions', {
+  axios.post('/api/regions', {
     regionName: document.getElementById('regionName').value,
     lat: document.getElementById('latitude').value,
     long: document.getElementById('longitude').value
   })
-
-    .then(({ data: [{ regionid, regionName, lat, long }] }) => {
-      
-    })
   }
 
   document.getElementById('createRegion').addEventListener('click', event => {
@@ -27,9 +23,9 @@ const createRegion = () => {
         localStorage.setItem('lat', data.lat)
         localStorage.setItem('lat', data.long)
 
-        console.log(data.username)
+        console.log(data.regionName)
 
 
-        window.location.replace("/createRecipe");
+        // window.location.replace("/createRecipe");
   })
 })
