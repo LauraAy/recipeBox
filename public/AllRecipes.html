@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Recipes - MRBox</title>
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
   <!-- uikit CDN -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
   <!-- local css -->
-<link rel="stylesheet" href="../public/assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
@@ -23,13 +28,14 @@
         <div class="uk-offcanvas-bar">
 
           <ul class="uk-nav uk-nav-default uk-margin">
-            <a href="index.html">
+            <a href="/">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="myRecipes.html">My Recipes</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="AllRecipes.html">All Recipes</a></li>
-            <li><a href="#">Region</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -43,9 +49,9 @@
   <br>
   <div>
     <h1 style="margin-left: 25px" class="uk-heading-line uk-heading-large"><span>All Recipes</span></h1>
-    <p style="margin-left: 25px">Welcome to All Recipes page! To create a new recipe, click the button below.</p>
+  <h3 style="margin-left: 25px">Welcome to All Recipes page! To create a new recipe, click the button below.</h3>
   </div>
-  
+
   <div>
     <p uk-margin>
       <button class="uk-button uk-button-secondary uk-button-large 
@@ -53,18 +59,19 @@
     </p>
     <hr class="uk-divider-icon" />
 
-
-  <h2 id=userDisplay></h2>
-  <div id=myRecDisplay></div>
+      <h2 id=userDisplay></h2>
+      <div id=allRecDisplay></div>
 
   </div>
+
+ 
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
-  <script src="../public/assets/js/AllRecipes.js"></script>
+  <script src="/assets/js/AllRecipes.js"></script>
 
 </body>
 

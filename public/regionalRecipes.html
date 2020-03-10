@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Regional Recipes</title>
+  <title>My Recipes - MRBox</title>
 
-<!-- uikit CDN -->
+  <!-- uikit CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
-<!-- local css -->
-<link rel="stylesheet" href=".//assets/css/style.css" />
+  <!-- local css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
   
@@ -25,13 +26,12 @@
           <ul class="uk-nav uk-nav-default uk-margin">
             <a href="#">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="#">Regional Recipes</a></li>
-            <li><a href="#">Create Region</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="#">All Recipes</a></li>
-            <li><a href="#">My Recipes</a></li>
-            <li><a href="#">Category</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
           <ul class="uk-navbar-nav">
             <li>
@@ -58,7 +58,12 @@
   </div>
 
 
-      <div id=allRecDisplay></div>
+      <div id="mapid"></div>
+      
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script src="./assets/js/map.js"></script>
+      
+      <div id="regionRecipes"></div>
    
 
   </div>

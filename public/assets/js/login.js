@@ -1,8 +1,9 @@
 const { axios, localStorage } = window
 
+// localStorage.clear()
+
 let uid = localStorage.getItem('uid')
 let uname = localStorage.getItem('uname')
-
 
 const createUser = () => {
   axios.post('/api/users', {
@@ -15,26 +16,8 @@ const createUser = () => {
       document.getElementById('message').textContent = `Thanks for creating an account! Now hit "Login" to get started.`
 
       document.getElementById('createUser').setAttribute('disabled', true)
-  })
     .catch(e => console.error(e))
-}
- 
-// function loginUser(email, password) {
-//   $.post("/api/login", {
-//     username: username,
-//     email: email
-//   })
-//     .then(function () {
-//       document.getElementById('username').textContent = ``
-//       document.getElementById('email').textContent = ``
-//       window.location.replace("/allRecipes");
-//       // If there's an error, log the error
-//     })
-//     .catch(function (err) {
-//       console.log(err);
-//     });
-// }
-
+})
 
 document.getElementById('createUser').addEventListener('click', event => {
   // Stop the form from refreshing the page
@@ -43,6 +26,7 @@ document.getElementById('createUser').addEventListener('click', event => {
   createUser()
   console.log('you created a user')
 })
+}
 
 
 
