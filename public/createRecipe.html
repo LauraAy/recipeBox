@@ -26,11 +26,12 @@
           <ul class="uk-nav uk-nav-default uk-margin">
             <a href="index.html">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="myRecipes.html">My Recipes</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="AllRecipes.html">All Recipes</a></li>
-            <li><a href="#">Region</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -53,6 +54,13 @@
       </div>
 
       <div class="uk-margin">
+        <label class="uk-form-label" for="form-stacked-text">Recipe Creator:</label>
+          <div class="uk-form-controls">
+            <input class="uk-input" type="text" id="creatorName" placeholder="Who created this recipe?"> 
+          </div>
+      </div>
+
+      <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Recipe Type:</label>
         <div class="uk-form-controls">
           <input class="uk-input" type="text" id="recipeType">
@@ -63,7 +71,7 @@
       <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Serving Size:</label>
         <div class="uk-form-controls">
-          <input class="uk-input" id="form-stacked-text" type="number" id="servingSize"
+          <input class="uk-input" for="form-stacked-text" type="number" id="servingSize"
             placeholder="How many people will this serve?">
         </div>
       </div>

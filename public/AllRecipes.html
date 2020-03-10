@@ -28,13 +28,14 @@
         <div class="uk-offcanvas-bar">
 
           <ul class="uk-nav uk-nav-default uk-margin">
-            <a href="index.html">
+            <a href="/">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="myRecipes.html">My Recipes</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="AllRecipes.html">All Recipes</a></li>
-            <li><a href="#">Region</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -48,7 +49,7 @@
   <br>
   <div>
     <h1 style="margin-left: 25px" class="uk-heading-line uk-heading-large"><span>All Recipes</span></h1>
-    <p style="margin-left: 25px">Welcome to All Recipes page! To create a new recipe, click the button below.</p>
+  <h3 style="margin-left: 25px">Welcome to All Recipes page! To create a new recipe, click the button below.</h3>
   </div>
 
   <div>
@@ -58,17 +59,12 @@
     </p>
     <hr class="uk-divider-icon" />
 
-      <!-- <h2 id=userDisplay></h2>
-  <div id=myRecDisplay></div> -->
+      <h2 id=userDisplay></h2>
+      <div id=allRecDisplay></div>
 
   </div>
 
-  <div id="mapid"></div>
-
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="./assets/js/map.js"></script>
-
-  <div id="regionRecipes"></div>
+ 
 
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="

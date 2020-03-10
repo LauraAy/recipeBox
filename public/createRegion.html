@@ -26,11 +26,12 @@
           <ul class="uk-nav uk-nav-default uk-margin">
             <a href="#">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="#">My Recipes</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="#">All Recipes</a></li>
-            <li><a href="#">Region</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
@@ -48,14 +49,14 @@
       <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Region Name:</label>
         <div class="uk-form-controls">
-          <input class="uk-input" type="text" id="title">
+          <input class="uk-input" type="text" id="regionName">
         </div>
       </div>
 
       <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Latitude:</label>
         <div class="uk-form-controls">
-          <input class="uk-input" type="number" id="latitude">
+          <input class="uk-input" type="number" step="any" id="latitude">
         </div>
       </div>
 
@@ -63,7 +64,7 @@
       <div class="uk-margin">
         <label class="uk-form-label" for="form-stacked-text">Longitude:</label>
         <div class="uk-form-controls">
-          <input class="uk-input"  type="number" id="logitude">
+          <input class="uk-input"  type="number" step="any" id="longitude">
         </div>
       </div>
 
@@ -81,7 +82,7 @@
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit-icons.min.js"></script>
-  <script src="../public/assets/js/createRecipe.js"></script>
+  <script src="assets/js/createRegion.js"></script>
 
   </body>
   </html>

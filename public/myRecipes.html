@@ -9,7 +9,7 @@
   <!-- uikit CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
   <!-- local css -->
-  <link rel="stylesheet" href="../public/assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
@@ -25,17 +25,18 @@
           <ul class="uk-nav uk-nav-default uk-margin">
             <a href="index.html">
               <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span></a>
-            <li><a href="myRecipes.html">My Recipes</a></li>
+            <li><a href="/myrecipes">My Recipes</a></li>
             <hr class="uk-divider-icon">
             <li class="uk-nav-header">Explore</li>
-            <li><a href="AllRecipes.html">All Recipes</a></li>
-            <li><a href="#">Region</a></li>
+            <li><a href="/allrecipes">All Recipes</a></li>
+            <li><a href="/map">Region</a></li>
+            <li><a href="/">Logout</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <img src="./assets/images/Navbar_logo.png" class="logo">
+    <img src="assets/images/Navbar_logo.png" class="logo">
 
   </nav>
 
@@ -43,11 +44,11 @@
   <br>
   <div>
     <h1 style="margin-left: 25px" class="uk-heading-line uk-heading-large"><span>My Recipes</span></h1>
-    <p style="margin-left: 25px">Welcome to My Recipes page! To create a new recipe, click the button below.</p>
+ <h3 style="margin-left: 25px">Welcome to My Recipes page! To create a new recipe, click the button below.</h3></p>
   </div>
   <div>
     <p uk-margin>
-      <button class="uk-button uk-button-secondary uk-button-large 
+      <button id="createRecipe" class="uk-button uk-button-secondary uk-button-large 
         uk-width-1-1">Create A Recipe</button>
     </p>
     <hr class="uk-divider-icon" />
